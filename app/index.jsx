@@ -10,8 +10,8 @@ const Home = () => {
       <ThemeLogo styles={styles.img} />
       <Text style={styles.title}>The Number 2</Text>
       <Text style={{ marginTop: 10, marginBottom: 30 }}>Reading List Apps</Text>
-      <Link href="/about" style={styles.link}>About Page</Link>
-      <Link href="/contact" style={styles.link}>Contact Page</Link>
+      <Link href="/login" style={styles.link}>Login Page</Link>
+      <Link href="/register" style={styles.link}>Register Page</Link>
     </ThemedView>
   )
 }
