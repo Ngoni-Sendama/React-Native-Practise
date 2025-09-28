@@ -3,15 +3,34 @@ import React from 'react'
 import { Link } from 'expo-router'
 import ThemedView from '../components/ThemedView'
 import ThemeLogo from '../components/ThemedLogo'
-
+import Spacer from "../components/Spacer"
+import ThemedText from "../components/ThemedText"
 const Home = () => {
   return (
+
+
     <ThemedView style={styles.container}>
       <ThemeLogo styles={styles.img} />
-      <Text style={styles.title}>The Number 2</Text>
-      <Text style={{ marginTop: 10, marginBottom: 30 }}>Reading List Apps</Text>
-      <Link href="/login" style={styles.link}>Login Page</Link>
-      <Link href="/register" style={styles.link}>Register Page</Link>
+      <Spacer />
+
+      <ThemedText style={styles.title} title={true}>The Number 1</ThemedText>
+
+      <ThemedText style={{ marginTop: 10, marginBottom: 30 }}>
+        Reading List App
+      </ThemedText>
+
+      <Link href="/login" style={styles.link}>
+        <ThemedText>Login</ThemedText>
+      </Link>
+
+      <Link href="/register" style={styles.link}>
+        <ThemedText>Register</ThemedText>
+      </Link>
+
+      <Link href="/profile" style={styles.link}>
+        <ThemedText>Profile</ThemedText>
+      </Link>
+
     </ThemedView>
   )
 }
